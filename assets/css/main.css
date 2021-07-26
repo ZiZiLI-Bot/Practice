@@ -626,6 +626,7 @@
     background-color: var(--white-color);
     width: 400px;
     border-radius: 3px;
+    z-index: 1;
     box-shadow: 1px 1px 5px rgb(151, 151, 151);
     /* display: flex; */
     display: none;
@@ -748,7 +749,7 @@
 }
 
 .app__content {
-    padding: 36px;
+    padding-top: 36px;
 }
 
 .category {
@@ -808,6 +809,124 @@
 }
 
 /* Home sort + filter */
+
+.home-filter {
+    display: flex;
+    background-color: #EDEDED;
+    align-items: center;
+    border-radius: 3px;
+    padding: 12px 22px;
+}
+
+.home-filter__titter {
+    font-size: 1.4rem;
+    margin-right: 16px;
+    color:#555;
+}
+
+.home-filter__btn {
+    min-width: 90px !important;
+    margin-right: 12px;
+}
+
+.select-price__text {
+    font-size: 1.4rem;
+}
+
+.select-price--icon {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1.4rem;
+}
+
+.home-filter__paginate {
+    margin-left: auto;
+    font-size: 1.4rem;
+    margin-right: 15px;
+}
+
+.home-filter__page-num {
+    color: var(--primary-color);
+}
+
+.home-filter__page-control {
+    display: flex;
+    width: 36px;
+    height: 36px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.home-filter__page-btn {
+    flex: 1;
+    background-color: var(--white-color);
+    display: flex;
+    text-decoration: none;
+}
+
+.home-filter__page-control--disabled {
+    background-color: #f9f9f9;
+    cursor: default;
+}
+
+.home-filter__page-control--disabled .home-filter__page-btn--icon {
+    color: #ccc;
+}
+
+
+.home-filter__page-btn:first-child {
+    border: 1px solid #eee;
+    border-radius: 3px;
+}
+
+.select-price__list {
+    position: absolute;
+    top: calc(100% - 6px);
+    background-color: var(--white-color);
+    right: 0;
+    min-width: 200px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+    padding-left: 15px;
+    animation: fadeIn linear 0.2s;
+    display: none;
+}
+
+.select-price__item {
+    display: flex;
+    height: 35px;
+    padding: 6px 0 0 0;
+    align-items: center;
+    list-style: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.home-filter__page-btn--icon {
+    margin: auto;
+    font-size: 1.4rem;
+    color: #555555;
+}
+
+.select-price__item:hover {
+    color: var(--primary-color);
+}
+
+.select-input--hover:hover .select-price__list {
+    display: block;
+}
+
+.select-input--hover::after {
+    height: 15px;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 27px;
+    background-color: transparent;
+    content: "";
+    display: block;
+}
+
+
+
 
 
 

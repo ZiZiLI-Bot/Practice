@@ -272,20 +272,30 @@
                     </div>
                     <div class="grid__column-10">
                         <div class="home-filter">
-                            <span class="home-filter__titter">Xắp xếp theo</span>
-                            <button class="btn ">Phổ biến</button>
-                            <button class="btn ">Mới nhất</button>
-                            <button class="btn btn--primary">Bán chạy</button>
-                            <div class="select-price">
+                            <span class="home-filter__titter">Sắp xếp theo</span>
+                            <button class="home-filter__btn btn btn--primary">Phổ biến</button>
+                            <button class="home-filter__btn btn">Mới nhất</button>
+                            <button class="home-filter__btn btn">Bán chạy</button>
+                            <div class="select-input select-input--hover">
                                 <spam class="select-price__text">Giá</spam>
-                                <i class="fas fa-chevron-down"></i>
+                                <i class="select-price--icon fas fa-chevron-down"></i>
+                                <ul class="select-price__list">
+                                    <li class="select-price__item">Giá: Từ thấp đến cao</li>
+                                    <li class="select-price__item">Giá: Cao thấp đến thấp</li>
+                                </ul>
                             </div>
                             <div class="home-filter__paginate">
-                                <spam class="home-filter__page-num">1</spam>
-                                /1
+                                <spam class="home-filter__page-num">1</spam>/1
                             </div>
                             <div class="home-filter__page-control">
-                                <a href="" class="home-filter__page-btn"></a>
+                                <a href="" class="home-filter__page-btn home-filter__page-control--disabled">
+                                    <i class="home-filter__page-btn--icon fas fa-chevron-left"></i>
+                                </a>
+                            </div>
+                            <div class="home-filter__page-control">
+                                <a href="" class="home-filter__page-btn">
+                                    <i class="home-filter__page-btn--icon fas fa-chevron-right"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
