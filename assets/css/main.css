@@ -897,6 +897,7 @@
     padding-left: 15px;
     animation: fadeIn linear 0.2s;
     display: none;
+    z-index: 1;
 }
 
 .select-price__item {
